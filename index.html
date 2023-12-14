@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Odin Create Account</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="left-column">
+            <div class="shade-banner">
+                <img src="odin-lined.png" class="logo" alt="white odin logo outline">
+                <h1>ODIN</h1>
+            </div>
+            <p class="photo-credit">
+                Photo by <a href="https://unsplash.com/@arunclarke">Arun Clarke</a>
+                on <a
+                    href="https://unsplash.com/photos/green-ferns-on-selective-focus-photography-5vLPyrbf5Tc">Unsplash</a>
+            </p>
+        </div>
+
+        <div class="right-column">
+            <div class="intro-block">
+                <h2>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. <br>Sign up <i>now</i> to get started.</h2>
+                <h2>You <i>know</i> you want to.</h2>
+            </div>
+
+            <div class="form-block">
+                <h2>Let's do this!</h2>
+                <form id="form-grid" action="#" method="POST">
+                    <div class="input">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Bjorn" required>
+                    </div>
+                    <div class="input">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Ericsson" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="bjorn@odin.com" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" minlength="7">
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" minlength="8" required>
+                    </div>
+                    <div class="input">
+                        <label for="confirm-pass">Confirm Password</label>
+                        <input type="password" id="confirm-pass" id="confirm-pass" minlength="8" required>
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-block">
+                <button type="submit" form="form-grid">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

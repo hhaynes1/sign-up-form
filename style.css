@@ -1,0 +1,263 @@
+@font-face {
+    font-family: "Harman Retro";
+    src: url(./Harman-Retro.otf);
+}
+
+@font-face {
+    font-family: "Odinson Light";
+    src: url(./OdinsonLight-vMZD.ttf);
+}
+
+:root {
+    --color-primary: #556B2F;
+    --color-white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+    div.page-container {
+        flex-direction: column;
+    }
+
+    /* left and right column */
+    div.page-container>div {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    div>div {
+        width: 100vw;
+        align-items: center;
+    }
+
+    div.shade-banner {
+        top: 0;
+        padding: 0.5rem;
+    }
+
+    div>.photo-credit {
+        width: 100vw;
+        background: rgba(0, 10, 0, 25%);
+    }
+
+    div.right-column {
+        align-items: center;
+    }
+
+    div>.intro-block {
+        padding: 0;
+    }
+
+    div.shade-banner h1 {
+        font-size: 4rem;
+    }
+
+    div.right-column>div>h2 {
+        text-align: center;
+        align-items: center;
+        margin: 12px 20px;
+        padding: 0;
+        font-size: 1rem;
+        width: auto;
+    }
+
+    div>.form-block {
+        padding: 0;
+    }
+
+    div>#form-grid {
+        flex-direction: column;
+    }
+
+    #form-grid input {
+        width: 70vw;
+    }
+
+    div .input {
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    div>div.input {
+        display: block;
+    }
+
+    .form-block>form {
+        margin: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div>.login-block {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .login-block>button {
+        width: 80%;
+    }
+}
+
+.page-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* left column */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 40vw;
+    background-image: url(./arun-clarke-5vLPyrbf5Tc-unsplash.jpg);
+    background-position: 100% 0%;
+    background-size: cover;
+}
+
+.logo {
+    height: 10vh;
+}
+
+.shade-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+
+    padding: 1rem 6rem;
+    background: rgba(0, 10, 0, 25%);
+}
+
+.shade-banner h1 {
+    font-family: "Odinson Light", 'Times New Roman', Times, serif;
+    display: inline;
+    line-height: 2rem;
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 6rem;
+    margin: 20px;
+}
+
+.photo-credit,
+.photo-credit a,
+.photo-credit a:visited {
+    color: var(--color-white);
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+/* right column */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+
+    width: 60vw;
+    text-align: left;
+    font-family: "Harman Retro", 'Times New Roman', Times, serif;
+}
+
+
+/* intro block */
+.intro-block {
+    background-color: var(--color-white);
+    padding: 90px 0 0 40px;
+}
+
+h2 {
+    width: 80%;
+    padding: 20px 0;
+
+}
+
+
+/* form block */
+.form-block {
+    background-color: #EEE;
+    padding-left: 40px;
+    box-shadow: 0px 2px 8px -2px #888888;
+}
+
+#form-grid {
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 10px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+form#form-grid>div {
+    padding: 10px 10px 10px 0;
+}
+
+#form-grid label {
+    display: block;
+    line-height: 1.2rem;
+}
+
+#form-grid input {
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid rgb(200, 200, 200);
+    padding-right: 1.5rem;
+}
+
+#form-grid input:focus {
+    outline: none;
+    border: 1px solid blue;
+}
+
+
+/* login block */
+.login-block {
+    background-color: #FFF;
+    padding-left: 40px;
+    max-height: 400px;
+}
+
+.login-block p {
+    margin: 20px 0;
+}
+
+.login-block a {
+    color: darkolivegreen;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-block a:hover {
+    font-weight: 400;
+}
+
+button {
+    color: whitesmoke;
+    background-color: var(--color-primary);
+    box-shadow: 2px 2px 3px rgb(20, 40, 20);
+
+    margin-top: 20px;
+    padding: 15px 75px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:active {
+    box-shadow: none;
+}
